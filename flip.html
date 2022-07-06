@@ -1,0 +1,62 @@
+<!--
+README!
+
+GAME INSRUCTIONS:
+
+p    - pause
+ESC  - abandon game
+
+Click the big P to choose one of three levels:
+- Casual
+- Medium
+- Hard
+
+The game will save your stats locally, via localStorage.
+Click the F to see your stats.
+
+Click I for these intructions.
+
+Flip is a timed card memory game. When starting a level, there's a red bar on top of the screen that shows how much time you have left.
+Click the green cards to see what symbol they uncover and try to find the matching symbol underneath the other cards.
+Uncover two matching symbols in a row to eliminate them from the game.
+Eliminate all cards as fast as you can to win the game. Have fun FLIPing!
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flip.css">
+    <script src="flip.js" defer ></script>
+    <link rel="icon" href="Pictures/SiteIcon.png">
+    <title>Kill The Bird's</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="timer">
+             <span></span>    
+        </div>
+        <div class="gameover">GAME OVER</div>
+        <h1 id="ktb">KILL THE BIRDS</h1>
+        <input class="input-circle input-circle1" type="radio" id="circle1" >
+       <input class="input-circle input-circle2" type="radio" id="circle2" >
+       <input class="input-circle input-circle3" type="radio" id="circle3" >
+       <input class="input-circle input-circle4" type="radio" id="circle4" >
+       <input class="input-circle input-circle5" type="radio" id="circle5" >
+       <input class="input-circle input-circle6" type="radio" id="circle6" >
+        
+        <label for="circle1" class="pajaro pajaro1"><span></span></label>
+        <label for="circle2" class="pajaro pajaro2"><span></span></label>
+        <label for="circle3" class="pajaro pajaro3"><span></span></label>
+        <label for="circle4" class="pajaro pajaro4"><span></span></label>
+        <label for="circle5" class="pajaro pajaro5"><span></span></label>
+        <label for="circle6" class="pajaro pajaro6"><span></span></label>
+        <div class="sum">SCORE:</div>
+        
+      </div>
+      
+</div>
+</body>
+</html>
